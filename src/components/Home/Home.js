@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../Button/Button';
 import Cart from '../Cart/Cart';
 import Gyms from '../Gyms/Gyms';
 import Myinfo from '../Myinfo/Myinfo';
@@ -13,8 +14,9 @@ const Home = () => {
             </div>
             <div className='bg-zinc-100 ml-2'>
                 <Myinfo></Myinfo>
-                 <Cart carts={carts}></Cart>
-            </div>
+                <Button></Button>
+                <Cart carts={carts}></Cart>
+             </div>
         </div>
     );
 };
