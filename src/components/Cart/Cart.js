@@ -5,6 +5,7 @@ const Cart = ({ carts,btnvalue,setBtnvalue }) => {
     for (const cart of carts) {
         totalTime = totalTime + cart.time;
     }
+    btnvalue = localStorage.getItem('Button-value');
     return (
         <div className='m-5'>
             <h1 className='text-2xl font-semibold'>Exercise Details</h1>
