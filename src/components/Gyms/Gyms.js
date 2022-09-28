@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Gym from '../Gym/Gym';
 
 const Gyms = () => {
     const [gyms, setGyms] = useState([]);
@@ -7,10 +8,18 @@ const Gyms = () => {
             .then(res => res.json())
         .then(data =>setGyms(data))
     }, [])
-    console.log(gyms)
+   
     return (
         <div>
-            <h1>I am fropm gyms</h1>
+            <div className='flex mt-5'>
+                <img className='w-10 h-10 rounded' src="https://images.unsplash.com/photo-1517305268957-8d20be2c9b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z3ltJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+                 <h1 className='text-3xl font-bold ml-3'>STRONG GYM</h1>
+            </div>
+            <div className='grid grid-cols-3 gap-5 mt-10'>
+            {
+                gyms.map( gym => <Gym gym={gym} key={gym.id}></Gym>)
+            }
+            </div>
         </div>
     );
 };

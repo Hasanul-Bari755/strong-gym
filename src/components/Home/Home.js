@@ -4,7 +4,7 @@ import Gyms from '../Gyms/Gyms';
 const Home = () => {
     return (
         <div className='grid grid-cols-4'>
-            <div className='col-span-3'>
+            <div className='col-span-3 w-[80%] mx-auto'>
                 <Gyms></Gyms>
             </div>
             <div className='bg-blue-600 ml-2'>
