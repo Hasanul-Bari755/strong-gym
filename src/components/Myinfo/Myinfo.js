@@ -2,7 +2,7 @@ import React from 'react';
 
 const Myinfo = () => {
     return (
-        <div>
+        <div className='pt-3'>
             <div className='flex  items-center m-5'>
                 <img className='rounded-full w-14 h-14' src="https://media.istockphoto.com/photos/body-building-workout-picture-id843435340?b=1&k=20&m=843435340&s=170667a&w=0&h=qnrwLh76TsSlkG4ptkAaWtbaNBG1t08Pj0P-4lXgAkk=" alt="" />
                 <div className='ml-5'>
