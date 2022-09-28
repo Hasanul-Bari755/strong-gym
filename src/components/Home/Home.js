@@ -14,11 +14,11 @@ const Home = () => {
     }
     return (
         <div className='grid grid-cols-4'>
-            <div className='col-span-3 w-[80%] mx-auto'>
+            <div className='col-span-4 lg:col-span-3 w-[80%] mx-auto'>
                 <Gyms carts={carts} setCarts={setCarts}></Gyms>
             </div>
             <div>
-                <div className='bg-zinc-100 ml-2 sticky top-0 '>
+                <div className='bg-zinc-100 ml-2 sticky top-0 lg:col-span-1 '>
                 <Myinfo></Myinfo>
                 <Button btnvalue={btnvalue} setBtnvalue={setBtnvalue} ></Button>
                 
