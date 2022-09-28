@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Gym from '../Gym/Gym';
 
-const Gyms = () => {
+const Gyms = ({carts,setCarts}) => {
     const [gyms, setGyms] = useState([]);
     useEffect(() => {
         fetch('gym.json')
@@ -17,7 +17,7 @@ const Gyms = () => {
             </div>
             <div className='grid grid-cols-3 gap-5 mt-10'>
             {
-                gyms.map( gym => <Gym gym={gym} key={gym.id}></Gym>)
+                gyms.map( gym => <Gym gym={gym} key={gym.id} carts={carts} setCarts={setCarts}></Gym>)
             }
             </div>
         </div>
